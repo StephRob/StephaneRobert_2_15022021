@@ -148,3 +148,26 @@
     margin: 0;
   }
 }
+
+/********** screen and (min-width: 1080px) ***********/
+@media screen and (min-width: 1080px) {
+
+  /***** CARD *****/
+  .card {
+    width: 31%;
+  }
+}
+
+/********** screen and (min-width: 1224px) ***********/
+@media screen and (min-width: 1224px) {
+
+  /***** FOOTER *****/
+  .footer__container {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .footer-section {
+    width: calc(100%/3);
+  }
+}
