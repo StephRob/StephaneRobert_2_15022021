@@ -45,7 +45,8 @@ i {
 .results__icon,
 .filter-link:hover .filter-link__title,
 .star-blue,
-.activities-card:hover .activities-card__description h3 {
+.activities-card:hover .activities-card__description h3,
+.footer-section__link:hover {
   color: #0065FC;
 }
 
@@ -402,6 +403,35 @@ i {
 
 .activities-card__description h3 {
   margin: 0;
+  color: initial;
+  transition: color .2s ease;
+}
+
+/********** FOOTER **********/
+.footer {
+  background-color: #F2F2F2;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+
+.footer-section {
+  margin: 0 3rem 1rem 0;
+}
+
+.footer-section__title {
+  margin: 1rem 0;
+}
+
+.footer-section ul {
+  flex-direction: column;
+}
+
+.footer-section__link {
+  margin-bottom: .5rem;
   color: initial;
   transition: color .2s ease;
 }
