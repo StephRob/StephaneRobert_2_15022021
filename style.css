@@ -32,8 +32,9 @@ i {
 
 .main,
 .main-card__description h3,
-.main-card__description p
-  {
+.main-card__description p,
+.accommadation-popular__header h2,
+.popular-card__info p {
   margin: 0;
 }
 
@@ -43,8 +44,7 @@ i {
 .filter-link__icon,
 .results__icon,
 .filter-link:hover .filter-link__title,
-.star-blue
-{
+.star-blue {
   color: #0065FC;
 }
 
@@ -323,4 +323,45 @@ i {
 .accommodation-main__more {
   margin: 1.5rem 0 .5rem 0;
   font-weight: 600;
+}
+
+/* POPULAR ACCOMMODATION */
+.accommodation-popular {
+  background-color: #F2F2F2;
+}
+
+.accommadation-popular__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accommadation-popular__header i {
+  font-size: x-large;
+}
+
+.popular-card {
+  display: flex;
+  height: 10rem;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+}
+
+.popular-card__img {
+  width: 40%;
+  margin: 0;
+}
+
+.popular-card__img img {
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.popular-card__description {
+  width: 60%;
+  padding: .5rem 1rem;
+}
+
+.popular-card__info h3 {
+  margin: 0 0 .4rem 0;
 }
