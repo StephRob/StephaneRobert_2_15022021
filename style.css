@@ -44,11 +44,13 @@ i {
 .filter-link__icon,
 .results__icon,
 .filter-link:hover .filter-link__title,
-.star-blue {
+.star-blue,
+.activities-card:hover .activities-card__description h3 {
   color: #0065FC;
 }
 
-.main-card__img img {
+.main-card__img img,
+.activities-card__img img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
@@ -364,4 +366,42 @@ i {
 
 .popular-card__info h3 {
   margin: 0 0 .4rem 0;
+}
+
+/********** ACTIVITIES **********/
+.activities {
+  margin-bottom: 2rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.activities__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.activities-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+}
+
+.activities-card__img {
+  width: 100%;
+  height: 1rem;
+  margin: 0;
+  flex: 1;
+}
+
+.activities-card__description {
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  padding: 0 1rem;
+}
+
+.activities-card__description h3 {
+  margin: 0;
+  color: initial;
+  transition: color .2s ease;
 }
