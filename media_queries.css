@@ -255,3 +255,23 @@
     grid-row: 3/6;
   }
 }
+
+/********** screen and (min-width: 1440px) ***********/
+@media screen and (min-width: 1440px) {
+
+  .main,
+  .header,
+  .footer__container {
+    max-width: 1450px;
+    margin: auto;
+  }
+
+  .main,
+  .header {
+    padding: 0 3rem;
+  }
+
+  .footer__container {
+    padding: 1.5rem 3rem;
+  }
+}
