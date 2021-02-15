@@ -26,9 +26,20 @@ a {
   color: #000000;
 }
 
+i {
+  font-size: large;
+}
+
+.main{
+  margin: 0;
+}
+
 .nav__subscribe,
 .nav__link--active a,
-.nav__link:hover a
+.nav__link:hover a,
+.filter-link__icon,
+.results__icon,
+.filter-link:hover .filter-link__title
 {
   color: #0065FC;
 }
@@ -87,4 +98,128 @@ a {
   padding: 1.5rem;
   font-weight: bold;
   width: 50%;
+}
+
+/********** SEARCH **********/
+.search {
+  padding: 2.5rem 1.5rem;
+}
+
+.search__title {
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.search-form__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .8rem 0 0 .8rem;
+  background-color: #F2F2F2;
+  min-width: 3rem;
+}
+
+.search-form__input {
+  flex-grow: 1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 3rem;
+  border: solid 0.05rem #F2F2F2;
+  border-radius: 0 .8rem .8rem 0;
+  padding: 0 .8rem;
+  outline-color: #DEEBFF;
+}
+
+.search-form__btn {
+  position: absolute;
+  right: 0;
+  min-width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: .8rem;
+  background-color: #0065FC;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.search-form__btn:hover {
+  background-color: #0057d1;
+}
+
+.search-form__btn span {
+  display: none;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters__title {
+  margin: 0 0 .5rem 0;
+}
+
+.filters ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-link {
+  position: relative;
+  height: 3rem;
+  border: solid 0.2rem #F2F2F2;
+  border-radius: 2rem;
+  margin: .5rem 1em .5rem 0;
+  cursor: pointer;
+  transition: border-color .2s ease;
+}
+
+.filter-link:hover {
+  border-color: #DEEBFF;
+}
+
+.filter-link__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -5px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+}
+
+.filter-link__title {
+  padding: 0 1rem 0 3.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+  transition: color .2s ease;
+}
+
+/* RESULTS */
+.results {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1rem;
+}
+
+.results__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .8rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  border: solid .05rem #DEEBFF;
+  border-radius: 50%;
 }
