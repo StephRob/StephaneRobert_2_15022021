@@ -120,3 +120,31 @@
     padding: 1.5rem 3rem;
   }
 }
+
+/********** screen and (min-width: 768px) ***********/
+
+@media screen and (min-width: 768px) {
+
+  /***** CARD *****/
+  .card {
+    width: 47%;
+  }
+
+  /***** ACCOMMODATIONS *****/
+  .accommodation-popular__cards,
+  .accommodation-main__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /***** ACTIVITIES *****/
+  .activities__container {
+    justify-content: space-between;
+  }
+
+  /***** FOOTER *****/
+  .footer__column {
+    margin: 0;
+  }
+}
