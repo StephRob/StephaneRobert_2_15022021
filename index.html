@@ -7,8 +7,8 @@
     <title>Réservia</title>
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve, en plein centre ville ou en pleine nature">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0e479fef98.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" as="style">
+    <script src="https://kit.fontawesome.com/0e479fef98.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media_queries.css" />
   </head>
@@ -36,8 +36,8 @@
         <p>En plein centre ville ou en pleine nature</p>
         <form method="get" class="search-form">
           <div class="search-form__icon"><i class="fas fa-map-marker-alt"></i></div>
-          <input type="search" class="search-form__input" placeholder="Où allez-vous ?">
-          <button class="search-form__btn" disabled>
+          <input id="search-input" type="search" class="search-form__input" placeholder="Où allez-vous ?">
+          <button class="search-form__btn" aria-label="Rechercher" disabled>
             <i class="fas fa-search"></i>
             <span>Rechercher</span>
           </button>
